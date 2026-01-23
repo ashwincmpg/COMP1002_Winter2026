@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Week 3 - HTML Forms Example</title>
+     <style>
+          input {
+               display:block; 
+          }
+
+          input[type="submit"] {
+               margin-top: 1rem; 
+          }
+          label {
+               display:block; 
+               margin: 1rem 0; 
+          }
+     </style>
+</head>
+
+<body>
+    <h1> Student Information</h1> 
+
+    <form method="post" action="">
+        <fieldset> 
+            <Legend> Student Details </Legend>
+
+            <label for="Fullname"> Fullname: </label>
+            <input type="text" name="Fullname" id="Fullname">
+
+            <!-- add email, date of birth, program,password, submit button-->
+
+             <label for="email"> Enter your Email: </label>
+             <input type="text" name="email" id="email" placeholder="email">
+
+             <label for="dob"> Date of Birth: </label>
+             <input type="text" name="dob" id="dob">
+
+             
+             <label for="program"> Enter your program name: </label>
+             <select id="program" name="program">
+                <option value="">Select your program</option>
+                <option value="computer_programming">Computer Programming</option>
+                <option value="cyber_security">Cyber Security</option>
+                <option value="web_development">Web Development</option>
+
+             </select>
+
+             <label for="password"> Enter your password </label>
+             <input type="text" name="password" id="password">
+
+             <label for="password_confirm"> Confirm your Password </label>
+             <input type="text" name="password_confirm" id="password_confirm">
+
+             <input type="submit" value="Submit Form">
+
+
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
