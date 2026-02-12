@@ -1,0 +1,53 @@
+
+:root{
+    --primary-color: #000080;
+    --background-color: #f6f6f6;
+    --card-background: #ddd;
+    --accent-color: #008080;
+
+    --spacing-mid:1rem;
+    --radius-sm:4px;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    padding: 2rem;
+    background:var(--card-background);
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+section {
+    background: var(--background-color);
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--accent-color)
+}
+
+/* Grouping with :is() */
+:is(h1, h2, p) {
+    margin-bottom: 0.5rem;
+}
+
+/* Exclusion with :not() */
+nav a:not(.highlight) {
+    color: var(--primary-color); 
+    text-decoration: none;
+}
+
+/* Accessible focus */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid  var(--primary-color); 
+    outline-offset: 2px;
+}
+
+/* Parent selection with :has() */
+section:has(button) {
+    border-left: 6px solid  var(--primary-color);
+    padding-left: 1rem;
+}
