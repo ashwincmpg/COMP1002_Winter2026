@@ -7,7 +7,8 @@ body {
 /* MOBILE FIRST (default styles) */
 .container {
   display: flex;
-  flex-direction: column; /* stacked vertically */
+  flex-direction: column;
+  /* stacked vertically */
   gap: 1rem;
 }
 
@@ -19,3 +20,15 @@ body {
 }
 
 /* MEDIA QUERIES HERE */
+
+@media (min-width: 700px) {
+
+  body {
+    background-color: #BADA55;
+  }
+
+  .container {
+    flex-direction: row; 
+  }
+
+}

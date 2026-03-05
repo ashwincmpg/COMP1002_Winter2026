@@ -7,11 +7,21 @@
 }
 
 .layout article {
-
+    /*width: 630px;*/
+    /* fluid*/ 
+    width: 65%; 
+    float: left; 
 }
 
 .layout aside {
+    /*width: 315px;*/ 
+    /* fluid */ 
+    width: 30%;  
+    float:right; 
+}
 
+main {
+    overflow: auto; 
 }
 
 /* Cards */
@@ -26,6 +36,7 @@
 }
 
 .cards {
+   clear: both; 
     margin: 1.5rem auto;
 
 }

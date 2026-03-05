@@ -14,12 +14,16 @@
 
 .layout {
    margin: 1.5rem auto;
+   display: flex; 
+   gap: 1rem; 
 }
 
 article {
+   flex: 2; 
 }
 
 aside {
+   flex: 1; 
 }
 
 .cards {
@@ -30,5 +34,5 @@ aside {
 }
 
 .card {
- 
+   flex: 1 1 250x; 
 }

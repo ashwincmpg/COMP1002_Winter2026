@@ -49,3 +49,28 @@ h1 {
 
 /* Your Solution Here */ 
 
+/* OPTION ONE - FLEXBOX - GOOD */ 
+
+/*.container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1rem; 
+}
+
+.card {
+    width:32%; 
+}*/ 
+
+/* OPTION TWO - GRID - BETTER */ 
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem; 
+}
+
+
+
+
+
+
