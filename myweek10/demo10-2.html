@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Demo 2 – Modifying Elements (Student)</title>
+    <style>
+      body {
+        font-family: Arial;
+        margin: 40px;
+        background: #f5f7fb;
+      }
+      section {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 800px;
+      }
+      button {
+        padding: 8px 12px;
+        margin: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1 id="heading">Original Heading</h1>
+      <p id="message">This paragraph will change.</p>
+
+      <button id="text-btn">Change Text</button>
+      <button id="style-btn">Change Style</button>
+    </section>
+
+    <script>
+      // TODO: Change the heading text when the button is clicked
+      // Hint: textContent
+
+      let heading = document.querySelector("#heading");
+      let msg = document.querySelector("#message");
+      let btn1 = document.querySelector("#text-btn");
+      let btn2 = document.querySelector("#style-btn");
+
+      btn1.addEventListener('click', function(){
+        //modifying the elements - text and html
+        heading.textContent = "The heading was been changed!";
+        msg.innerHTML = "This paragrapgh now has <strong> bold </strong> text!";
+      });
+
+      //change style with style propert
+      btn2.addEventListener('click',function(){
+        heading.style.color = "#BADA55";
+        heading.style.backgroundColor = "#C0FFEE";
+        heading.style.padding = "10px";
+        msg.style.color = "#G0F0F0";
+        msg.style.borderLeft = "thick solid #000";
+        msg.style.padding = "10px";
+      });
+
+      /*btn2.addEventListener('click',funtion(){
+        msg.style.color = "#G0F0F0";
+        msg.style.borderLeft = "thick solid #000";
+        msg.style.padding = "10px";
+
+      });*/
+
+
+      // TODO: Change the heading color
+      // Hint: element.style.color
+    </script>
+  </body>
+</html>
